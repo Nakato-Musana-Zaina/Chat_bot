@@ -1,5 +1,6 @@
 import requests
-from bs4 import BeautifulSoup 
+
+import BeautifulSoup
 
  
 results = requests.get('https://pubmed.ncbi.nlm.nih.gov/26729021/')
