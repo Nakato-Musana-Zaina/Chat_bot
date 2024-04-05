@@ -1,13 +1,17 @@
+
+from bs4 import BeautifulSoup
 import requests
 
-import BeautifulSoup
-
- 
-results = requests.get('https://pubmed.ncbi.nlm.nih.gov/26729021/')
+url =  " https://www.healthline.com/health/depression"
+results = requests.get('url')
 print(results)
 
 
-soup = BeautifulSoup(results.content, 'html.parser')
+soup = BeautifulSoup(results.text, "html")
+print(soup)
+
 print(soup.prettify())
+
+soup.findAll("p", "ul")
 
 

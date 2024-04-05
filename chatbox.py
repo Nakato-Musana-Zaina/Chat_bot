@@ -1,4 +1,5 @@
-
+import configparser
+configparser.__name__
 import json
 from difflib import get_close_matches
 
@@ -38,8 +39,22 @@ def chat_bot():
           if best_match:
                answer: str = get_answer_for_question(best_match, knowledge_base)
                print(f"Bot: {answer}")
-          else: print('Bot: I don not know the answer. Can you teach me?')
+          else: print('Bot: I do not know the answer. Can you teach me?')
           new_answer: str = input('Write your answer or "skip" to skip:')
+
+
+          if new_answer.lower()!= 'skip':
+               knowledge_base["questions"].append({"question":user_input, "answer":new_answer})
+               save_knowledge_base("knowledge_base.json", knowledge_base)
+               print("Bot:Thank you! I have Learned Anew response")
+
+
+
+if __name__ == '__main__':
+     chat_bot
+
+              
+
 
           
 
