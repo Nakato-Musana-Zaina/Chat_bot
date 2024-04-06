@@ -1,4 +1,18 @@
 from GoogleNews import GoogleNews  
+from bs4 import BeautifulSoup
 googlenews = GoogleNews()
+googlenews.search("Uganda")
+result = googlenews.result()
 
-from requests_html import HTMLSession
+print(result)
+
+#news = BeautifulSoup(result)
+
+
+
+
+
+
+
+
+
