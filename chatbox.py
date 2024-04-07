@@ -18,8 +18,8 @@ def find_best_match(user_question: str, questions:list[str])-> str | None:
      return matches[0] if matches else None
 
 def get_answer_for_question(question:str, knowledge_base:dict)-> str | None:
-     for q in knowledge_base["questions"]:
-          if q["questions"] == question:
+     for q in knowledge_base["Questions"]:
+          if q["question"] == question:
                return q["answer"]
           
 
@@ -29,29 +29,29 @@ def chat_bot():
      knowledge_base: dict= load_knowledge_base('knowledge_base.json')
 
      while True:
-          user_input: str = input('you:')
+          user_input: str = input('You: ')
 
           if user_input.lower() == 'quit':
                break
           
-          best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["questions"]])
+          best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["Questions"]])
 
           if best_match:
                answer: str = get_answer_for_question(best_match, knowledge_base)
                print(f"Bot: {answer}")
-          else: print('Bot: I do not know the answer. Can you teach me?')
-          new_answer: str = input('Write your answer or "skip" to skip:')
+          else: print('Bot: I do not know the answer. Can you teach me? ')
+          new_answer: str = input('Write your answer or "skip" to skip: ')
 
 
           if new_answer.lower()!= 'skip':
-               knowledge_base["questions"].append({"question":user_input, "answer":new_answer})
+               knowledge_base["Questions"].append({"question":user_input, "answer":new_answer})
                save_knowledge_base("knowledge_base.json", knowledge_base)
-               print("Bot:Thank you! I have Learned Anew response")
+               print("Bot:Thank you! I have Learned a new response")
 
 
 
 if __name__ == '__main__':
-     chat_bot()
+      chat_bot()
 
               
 

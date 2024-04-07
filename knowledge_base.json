@@ -1,6 +1,68 @@
 {
-    "Questions":{
-        
-    
-}
+  "Questions": [
+    {
+      "question": "Hello",
+      "answer": "hey"
+    },
+    {
+      "question": "how are you doing today?",
+      "answer": "I am feeling okay"
+    },
+    {
+      "question": "hello",
+      "answer": "how are you"
+    },
+    {
+      "question": "what is my timetable for Monday?",
+      "answer": "you have Dev101 in the morning\\n Dev101 in the afternoon\\n andd UI research in the evening."
+    },
+    {
+      "question": "I am feeling sad/bad/down/low/depressed/unhappy",
+      "answer": "That does not sound great, Can I give you some advice?"
+    },
+    {
+      "question": "It is okay/ yes/ fine /go ahead/ alright/sawa/ very well/ all right then",
+      "answer": "/bin/python3 /home/studen/project/chatbox.py"
+    },
+    {
+      "question": "hey",
+      "answer": "quit"
+    },
+    {
+      "question": "/bin/python3 /home/studen/project/chatbox.py",
+      "answer": "/bin/python3 /home/studen/project/chatbox.py"
+    },
+    {
+      "question": "hey",
+      "answer": "how are you"
+    },
+    {
+      "question": "hey",
+      "answer": "hello"
+    },
+    {
+      "question": "hey",
+      "answer": "/bin/python3 /home/studen/project/chatbox.py"
+    },
+    {
+      "question": "hey, do you know the current president of Kenya?",
+      "answer": "The current president is called William Ruto"
+    },
+    {
+      "question": "Who is the current president of Kenya?",
+      "answer": "Who is Nakato Musana?"
+    },
+    {
+      "question": "Who is Nakato Musana?",
+      "answer": "She a student in Akirachix in Ada Lab class, she is the one who created you"
+    },
+    {
+      "question": "who is Nakato?",
+      "answer": "Nakato"
+    },
+    {
+      "question": "who is Nakato?",
+      "answer": "quit"
+    }
+  ]
 }
